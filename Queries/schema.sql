@@ -53,4 +53,9 @@ CREATE TABLE titles (
   PRIMARY KEY (title)
 );
 
-SELECT * FROM departments;
+COPY departments FROM '/Users/cristinalefemine/Public/departments.csv' DELIMITER ',' CSV HEADER;
+COPY employees FROM '/Users/cristinalefemine/Public/employees.csv' DELIMITER ',' CSV HEADER;
+COPY dept_manager FROM '/Users/cristinalefemine/Public/dept_manager.csv' DELIMITER ',' CSV HEADER;
+COPY salaries FROM '/Users/cristinalefemine/Public/salaries.csv' DELIMITER ',' CSV HEADER;
+COPY dept_emp FROM '/Users/cristinalefemine/Public/dept_emp.csv' DELIMITER ',' CSV HEADER;
+COPY titles FROM '/Users/cristinalefemine/Public/titles.csv' DELIMITER ',' CSV HEADER;
